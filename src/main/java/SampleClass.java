@@ -2,13 +2,17 @@
  * Your goal for this activity is to provide an overriden implementation of the 'equals' method and the 'toString'
  * method. Please note that these methods are automatically inherited by all classes in Java from the Object class.
  * 
- * For the equals() method, two objects will be considered equal if the fields 'a' and 'b' are equal in both objects. 
- * The equals() should take in a parameter that is another SampleClass object, and access its version of the fields 
- * 'a' and 'b'. Return true if the values of 'a' and 'b' are equal in both objects, and false otherwise.
- *
- * For the toString() method, the test cases will check if the String returned by the toString method contains 
- * information about the fields of this object. Essentially, you just need to append them to the String that is 
- * returned by toString. The string may be formatted in any way.
+ * The equals() method compares two objects and should return a boolean to determine if the objects are equivalent to
+ * one another. This equivalency typically means that all respective instance variable values between two objects of the
+ * same type are the same. For the SampleClass below two objects are "equal" if the fields 'a' and 'b' are the same in both
+ * objects. The equals() method should take in a parameter that is another SampleClass object, and access its version 
+ * of the fields 'a' and 'b'. Return true if the values of 'a' and 'b' are equal in both objects, and false otherwise.
+ * 
+ * The toString() method is used to return a descriptive representation of the object in memory. Typically this 
+ * includes the name of the class, and the value of each field of that object. Please note the the test cases for this 
+ * lab will check if the String returned by the toString method contains information about the fields of this object.
+ * Essentially, you just need to append them to the String that is returned by toString. The string may be formatted 
+ * in any way.
  *
  * The test cases for this class use methods called .equals which aren't written anywhere in this class. How?
  * All objects have a method called .equals and a method called toString - they are inherited from the Object class,
